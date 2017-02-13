@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Actions>
+	<Action id="toggle" deviceFilter="self">
+		<Name>Toggle Control</Name>
+		<CallbackMethod>ToggleButton</CallbackMethod>
+	</Action>
+
+	<Action id="MoveButton" deviceFilter="self">
+		<Name>Move Image</Name>
+		<ConfigUI>
+		
+			<Field type="checkbox" id="usevariables" defaultValue="false">
+				<Label>Use Variable IDs:</Label>
+			</Field>
+		
+			￼<Field type="menu" id="percentpixel" defaultValue="percent">
+				<Label>Pixel/Percent:</Label>
+					<List>
+						<Option value="percent">Percent</Option>
+						<Option value="pixel">Pixel</Option>
+					</List>
+			</Field>
+			
+			<Field type="menu" id="relative" defaultValue="relative">
+				<Label>Move From:</Label>
+					<List>
+						<Option value="current">Relative to Current Location</Option>
+						<Option value="origin">Relative to Origin</Option>
+					</List>
+			</Field>
+			
+			<Field id="MoveY" type="textfield" defaultValue="0">
+				<Label>Move Image Up/Down:</Label>
+			</Field>
+			<Field id="MoveX" type="textfield" defaultValue="0">
+				<Label>Move Image Left/Right:</Label>
+			</Field>
+		</ConfigUI>
+		<CallbackMethod>MoveButton</CallbackMethod>
+	</Action>
+	
+	<Action id="ChangeButtonColor" deviceFilter="self">
+		<Name>Change Image Color</Name>
+		<ConfigUI>	
+			<Field type="checkbox" id="usevariables" defaultValue="false">
+				<Label>Use Variable IDs:</Label>
+			</Field>
+			<Field id="buttonr" type="textfield" defaultValue="0">
+				<Label>Image Red (0-255):</Label>
+			</Field>
+			<Field id="buttong" type="textfield" defaultValue="0">
+				<Label>Image Green (0-255):</Label>
+			</Field>
+			<Field id="buttonb" type="textfield" defaultValue="0">
+				<Label>Image Blue (0-255):</Label>
+			</Field>
+			<Field id="buttont" type="textfield" defaultValue="0">
+				<Label>Image Transparent (0-255):</Label>
+			</Field>
+		</ConfigUI>
+		<CallbackMethod>ButtonColor</CallbackMethod>
+	</Action>
+	
+	<Action id="ChangeCanvasColor" deviceFilter="self">
+		<Name>Change Canvas Color</Name>
+		<ConfigUI>	
+			<Field type="checkbox" id="usevariables" defaultValue="false">
+				<Label>Use Variable IDs:</Label>
+			</Field>
+			<Field id="canvasr" type="textfield" defaultValue="0">
+				<Label>Canvas Red (0-255):</Label>
+			</Field>
+			<Field id="canvasg" type="textfield" defaultValue="0">
+				<Label>Canvas Green (0-255):</Label>
+			</Field>
+			<Field id="canvasb" type="textfield" defaultValue="0">
+				<Label>Canvas Blue (0-255):</Label>
+			</Field>
+			<Field id="canvast" type="textfield" defaultValue="0">
+				<Label>Canvas Transparent (0-255):</Label>
+			</Field>
+		</ConfigUI>
+		<CallbackMethod>CanvasColor</CallbackMethod>
+	</Action>
+	
+	
+</Actions>

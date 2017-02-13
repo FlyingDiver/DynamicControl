@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+
+<Devices>
+	<Device type="custom" id="dynamicbutton">
+		<Name>Dynamic Control</Name>
+		<ConfigUI>
+			<Field id="Directory" type="textfield" defaultValue="/Library/Application Support/Perceptive Automation/Indigo 7/IndigoWebServer/plugins/DynamicButton/">
+				<Label>Save Directory:</Label>
+			</Field>
+			<Field id="ButtonCoordX" type="textfield" defaultValue="0" hidden="true">
+				<Label>Button Current X Location in Pixels:</Label>
+			</Field>
+			<Field id="ButtonCoordY" type="textfield" defaultValue="0" hidden="true">
+				<Label>Button Current Y Location in Pixels:</Label>
+			</Field>
+			
+			<Field id="simpleSeparator1" type="separator"/>
+		
+			<Field id="CanvasX" type="textfield" defaultValue="10">
+				<Label>Canvas Length in Pixels:</Label>
+			</Field>
+			<Field id="CanvasY" type="textfield" defaultValue="10">
+				<Label>Canvas Height in Pixels:</Label>
+			</Field>
+			<Field id="CanvasR" type="textfield" defaultValue="0">
+				<Label>Canvas Red (0-255):</Label>
+			</Field>
+			<Field id="CanvasG" type="textfield" defaultValue="0">
+				<Label>Canvas Green (0-255):</Label>
+			</Field>
+			<Field id="CanvasB" type="textfield" defaultValue="0">
+				<Label>Canvas Blue (0-255):</Label>
+			</Field>			
+			<Field id="CanvasT" type="textfield" defaultValue="0">
+				<Label>Canvas Transparency (0-255):</Label>
+			</Field>
+			
+			<Field id="simpleSeparator2" type="separator"/>
+			
+			<Field id="ButtonX" type="textfield" defaultValue="10">
+				<Label>Image Length in Pixels:</Label>
+			</Field>
+			<Field id="ButtonY" type="textfield" defaultValue="10">
+				<Label>Image Height in Pixels:</Label>
+			</Field>
+			<Field id="ButtonR" type="textfield" defaultValue="0">
+				<Label>Image Red (0-255):</Label>
+			</Field>
+			<Field id="ButtonG" type="textfield" defaultValue="0">
+				<Label>Image Green (0-255):</Label>
+			</Field>
+			<Field id="ButtonB" type="textfield" defaultValue="0">
+				<Label>Image Blue (0-255):</Label>
+			</Field>			
+			<Field id="ButtonT" type="textfield" defaultValue="0">
+				<Label>Image Transparency (0-255):</Label>
+			</Field>
+			<Field type="menu" id="growy" defaultValue="nogrowy">
+				<Label>Grow Up/Down:</Label>
+					<List>
+						<Option value="growup">Grow Up</Option>
+						<Option value="growdown">Grow Down</Option>
+						<Option value="nogrowx">Don't Grow</Option>
+					</List>
+			</Field>	
+			<Field type="menu" id="growx" defaultValue="nogrowx">
+				<Label>Grow Left/Right:</Label>
+					<List>
+						<Option value="growleft">Grow Left</Option>
+						<Option value="growright">Grow Right</Option>
+						<Option value="nogrowy">Don't Grow</Option>
+					</List>
+			</Field>			
+
+		</ConfigUI>
+		
+		<States>
+			<State id="state">
+				<ValueType>String</ValueType>
+				<TriggerLabel>State</TriggerLabel>
+				<ControlPageLabel>State</ControlPageLabel>
+			</State>
+			<State id="ButtonRed">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Button Red</TriggerLabel>
+				<ControlPageLabel>Button Red</ControlPageLabel>
+			</State>
+			<State id="ButtonGreen">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Button Green</TriggerLabel>
+				<ControlPageLabel>Button Green</ControlPageLabel>
+			</State>
+			<State id="ButtonBlue">
+				<ValueType>String</ValueType>
+				<TriggerLabel>Button Blue</TriggerLabel>
+				<ControlPageLabel>Button Blue</ControlPageLabel>
+			</State>
+		</States>
+		<UiDisplayStateId>state</UiDisplayStateId>
+		
+	</Device>
+
+</Devices>
