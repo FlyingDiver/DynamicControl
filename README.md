@@ -1,2 +1,2 @@
-# DynamicButton
-Indigo Plugin to crate dynamic buttons that change size and color. (In Development)
+# Dynamic Control
+Indigo Plugin to create dynamic controls that change size and color.
