@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<Actions>
-	<SupportURL>http://wiki.indigodomo.com/doku.php?id=plugins:example_dev_1</SupportURL>
-	<Action id="???" deviceFilter="self">
-		<Name>???</Name>
-		<CallbackMethod>????</CallbackMethod>
-	</Action>
-</Actions>
-
